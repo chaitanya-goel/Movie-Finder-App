@@ -1,7 +1,8 @@
-import './App.css';  // Import the CSS file
+  // Import the CSS file
 import Search from "./assets/search-512.webp"
 import {useState} from 'react'
 import MovieCard from './MovieCard';
+import './App.css'
 
 
 // Api Url from OMDB
@@ -16,27 +17,16 @@ const [movies, setMovies] = useState([])
 const [searchTerm, setSearchTerm] = useState("")
 
 const url = 'https://www.omdbapi.com/?&apikey=37410f16';
-
-// const searchMovies = async (title) =>{
-//   const response = await fetch(`${url}&s=${title}`)
-//   const data = await response.json();
-//   console.log(data) ;
-  
-//   const movie = data?.Search || []; 
-//   console.log(movie,"get movies");
-//   setMovies(movie.search)
-  
-// }
 const searchMovies = async (title) => {
-  if (title === "") return; // Don't search if the input is empty
+  if (title === "") return; 
 
   const response = await fetch(`${url}&s=${title}`);
   const data = await response.json();
 
   if (data?.Search) {
-    setMovies(data.Search); // Set the array of movies to the state
+    setMovies(data.Search);
   } else {
-    setMovies([]); // Set empty array if no results found
+    setMovies([]);
   }
 };
 

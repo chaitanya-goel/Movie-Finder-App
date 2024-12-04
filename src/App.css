@@ -184,13 +184,21 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-	.app {
-		padding: 4rem 2rem;
+	.App {
+		margin: auto;
+		padding: auto;
+	}
+
+	.App h1{
+		font-size: 45px;
+		margin-top: 60px;
+
 	}
 
 	.search {
-		padding: 1rem 1.75rem;
-		width: 100%;
+               margin: auto;
+			   margin-top: 30px;
+			   padding: 20px;
 	}
 
 	.search input {
@@ -201,24 +209,90 @@ h1 {
 		width: 20px;
 		height: 20px;
 	}
+
+	.empty{
+		text-align: center;
+		margin-top: 20px;
+	}
+	.movie{
+		margin: auto;
+		margin-top: 20px;
+	}
 }
 
-@media screen and (max-width: 400px) {
-	.app {
-		padding: 4rem 1rem;
-  
+
+@media screen and (max-width: 998px) {
+	.App {
+		margin: auto;
+		padding: auto;
 	}
 
-	h1 {
-		font-size: 2rem;
+	.App h1{
+		font-size: 65px;
+		margin-top: 60px;
+
 	}
 
-	.container {
-		margin-top: 2rem;
+	.search {
+               margin: auto;
+			   margin-top: 30px;
+			   padding: 20px;
 	}
 
-	.movie {
-		width: "100%";
-		margin: 1rem;
+	.search input {
+		font-size: 1rem;
+	}
+
+	.search img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.empty{
+		text-align: center;
+		margin-top: 20px;
+	}
+	.movie{
+		margin: auto;
+		margin-top: 20px;
+	}
+}
+
+
+
+@media screen and (min-width: 998px) {
+	.App {
+		margin: auto;
+		padding: auto;
+	}
+
+	.App h1{
+		font-size: 100px;
+		margin-top: 60px;
+
+	}
+
+	.search {
+               margin: auto;
+			   margin-top: 30px;
+			   padding: 20px;
+	}
+
+	.search input {
+		font-size: 1rem;
+	}
+
+	.search img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.empty{
+		text-align: center;
+		margin-top: 20px;
+	}
+	.movie{
+		margin: auto;
+		margin-top: 20px;
 	}
 }
